@@ -23,4 +23,4 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - RecMono
+        - Recursive
