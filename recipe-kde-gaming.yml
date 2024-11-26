@@ -2,17 +2,17 @@ name: pawzite-kde
 description: This is my personal development image, it has kde for desktop and isw for msi notebook fan control.
 
 base-image: ghcr.io/ublue-os/bazzite-nvidia
-image-version: 41
+image-version: '41'
 
 modules:
   - type: files
     files:
       - source: bin
-        destination: /usr/bin
+        destination: /bin
       - source: etc
         destination: /etc
       - source: lib
-        destination: /usr/lib
+        destination: /lib
 
   - type: rpm-ostree
 
