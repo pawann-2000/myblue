@@ -17,6 +17,19 @@ modules:
   - type: rpm-ostree
 
   - type: default-flatpaks
-    notify: true
+    configurations:
+    - scope: user
+      repo:
+        title: Flathub (user)
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (system)
+      install:
+        - org.mozilla.firefox
+        - com.github.tchx84.Flatseal
+        - io.github.flattool.Warehouse
+        - io.missioncenter.MissionCenter
+        - com.github.rafostar.Clapper
 
   - type: signing
